@@ -6,9 +6,8 @@ import QtQuick.Window 2.15
 import QtQml 2.15
 import xstudio.qml.bookmarks 1.0
 import QtQml.Models 2.14
-import QtQuick.Dialogs 1.3 //for ColorDialog
-import QtGraphicalEffects 1.15 //for RadialGradient
-import QtQuick.Controls.Styles 1.4 //for TextFieldStyle
+import QtQuick.Dialogs 6.5 //for ColorDialog
+
 import QuickFuture 1.0
 import QuickPromise 1.0
 
@@ -958,13 +957,13 @@ Rectangle{ id: leftDiv
                                 else if(model.index==3) "qrc:///feather_icons/message-square.svg"
                                 else if(model.index==4) "qrc:///feather_icons/menu.svg"
                             anchors.horizontalCenter: parent.horizontalCenter
-                            layer {
+                            /*layer {
                                 enabled: true
                                 effect:
                                 ColorOverlay {
                                     color: enabled? currentCategoryClass === modelData || categoryButton.down || categoryButton.hovered || parent.isActive? textColorActive: textColorNormal : Qt.darker(textColorNormal,1.5)
                                 }
-                            }
+                            }*/
                         }
 
                         onClicked: {

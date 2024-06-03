@@ -1,7 +1,7 @@
 // SPDX-License-Identifier: Apache-2.0
 import QtQuick 2.12
 import QtQuick.Controls 2.5
-import QtGraphicalEffects 1.12
+
 
 import xStudio 1.0
 import xstudio.qml.viewport 1.0
@@ -86,14 +86,14 @@ MenuItem {
                 height: iconsize // 2
                 anchors.centerIn: parent
             }
-            ColorOverlay{
+            /*ColorOverlay{
                 id: colorolay
                 anchors.fill: checkIcon
                 source:checkIcon
                 visible: menuItem.checked
                 color: XsStyle.hoverColor//menuItem.highlighted?XsStyle.hoverColor:XsStyle.menuBackground
                 antialiasing: true
-            }
+            }*/
         }
     }
     //    icon
@@ -123,13 +123,13 @@ MenuItem {
             width: iconsize
             height: iconsize
 
-            ColorOverlay{
+            /*ColorOverlay{
                 anchors.fill: iconPart
                 source:iconPart
                 visible: iconPart.visible
                 color: XsStyle.hoverColor
                 antialiasing: true
-            }
+            }*/
         }
         property alias textPart:textPart
         Text {

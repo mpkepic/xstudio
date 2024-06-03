@@ -2,7 +2,6 @@
 import QtQuick 2.14
 import QtQuick.Controls 2.14
 import QtQuick.Controls 1.4
-import QtGraphicalEffects 1.15
 
 import xStudioReskin 1.0
 

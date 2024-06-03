@@ -1,8 +1,8 @@
 SET(LINK_DEPS
 	${CAF_LIBRARY_core}
-	Qt5::Core
-	Qt5::Qml
-	Qt5::Gui
+	Qt6::Core
+	Qt6::Qml
+	Qt6::Gui
 	xstudio::utility
 )
 

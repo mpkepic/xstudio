@@ -1,10 +1,10 @@
 SET(LINK_DEPS
 	${CAF_LIBRARY_core}
 	Imath::Imath
-	Qt5::Core
-	Qt5::Qml
-	Qt5::Quick
-	Qt5::Widgets
+	Qt6::Core
+	Qt6::Qml
+	Qt6::Quick
+	Qt6::Widgets
 	xstudio::module
 	xstudio::playhead
 	xstudio::ui::opengl::viewport

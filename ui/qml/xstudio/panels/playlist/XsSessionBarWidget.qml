@@ -2,7 +2,7 @@
 import QtQuick.Controls 2.15
 import QtQuick 2.15
 import QtQuick.Layouts 1.15
-import QtGraphicalEffects 1.12
+
 import QtQml 2.14
 
 import xStudio 1.0
@@ -150,12 +150,12 @@ Rectangle {
 		        	onReleased: control.expandReleased(mouse)
 			    }
 
-			    layer {
+			    /*layer {
 			        enabled: true
 			        effect: ColorOverlay {
 			            color: XsStyle.controlColor
 			        }
-			    }
+			    }*/
 		    }
 
 		    Image {
@@ -168,12 +168,12 @@ Rectangle {
 		        sourceSize.width:  width
 		        smooth: true
 		        visible: type_icon_source
-			    layer {
+			    /*layer {
 			        enabled: true
 			        effect: ColorOverlay {
 			            color: type_icon_color
 			        }
-			    }
+			    }*/
 		    }
 
 		    Rectangle {
@@ -248,12 +248,12 @@ Rectangle {
 			        sourceSize.height: height
 			        sourceSize.width:  width
 			        smooth: true
-				    layer {
+				    /*layer {
 				        enabled: true
 				        effect: ColorOverlay {
 				            color: XsStyle.controlColor
 				        }
-				    }
+				    }*/
 			    }
 
 	    	    // Behavior on opacity {
@@ -291,12 +291,12 @@ Rectangle {
 			        sourceSize.height: height
 			        sourceSize.width:  width
 			        smooth: true
-				    layer {
+				    /*layer {
 				        enabled: true
 				        effect: ColorOverlay {
 				            color: XsStyle.controlColor
 				        }
-				    }
+				    }*/
 			    }
 			    MouseArea {
 			    	id: search_ma
@@ -335,12 +335,12 @@ Rectangle {
 			        sourceSize.height: height
 			        sourceSize.width:  width
 			        smooth: true
-				    layer {
+				    /*layer {
 				        enabled: true
 				        effect: ColorOverlay {
 				            color: XsStyle.controlColor
 				        }
-				    }
+				    }*/
 				}
 			    MouseArea {
 			    	id: more_ma

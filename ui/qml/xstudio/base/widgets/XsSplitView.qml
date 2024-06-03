@@ -1,7 +1,7 @@
 // SPDX-License-Identifier: Apache-2.0
 import QtQuick 2.15
 import QtQuick.Controls 2.15
-import QtGraphicalEffects 1.15 //for ColorOverlay
+
 
 
 SplitView {
@@ -23,13 +23,13 @@ SplitView {
             width: framePadding*3
             rotation: 90
             smooth: true
-            layer {
+            /*layer {
                 enabled: true
                 effect:
                 ColorOverlay {
                     color: parent.SplitHandle.pressed? itemColorActive: textColorNormal
                 }
-            }
+            }*/
         }
     }
 
@@ -44,13 +44,13 @@ SplitView {
             width: framePadding*3
             rotation: 0
             smooth: true
-            layer {
+            /*layer {
                 enabled: true
                 effect:
                 ColorOverlay {
                     color: parent.SplitHandle.pressed? itemColorActive: textColorNormal
                 }
-            }
+            }*/
         }
     }
 

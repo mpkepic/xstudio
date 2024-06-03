@@ -1,9 +1,9 @@
 // SPDX-License-Identifier: Apache-2.0
 import QtQuick 2.12
 import QtQuick.Controls 2.14
-import QtGraphicalEffects 1.12
+
 import QtQuick.Layouts 1.3
-import QtQuick.Dialogs 1.0
+import QtQuick.Dialogs 6.5
 
 import xStudio 1.1
 
@@ -82,8 +82,7 @@ XsDialog {
         FileDialog {
             id: filedialog
             title: qsTr("Name / select a file to save")
-            selectMultiple: false
-            selectFolder: false
+            fileMode: FileDialog.SaveFile
             selectExisting: false
             nameFilters: [ "JPEG files (*.jpg)", "PNG files (*.png)", "TIF files (*.tif *.tiff)", "EXR files (*.exr)" ]
             property var suffixes: ["jpg", "png", "tif", "exr"]

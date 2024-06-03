@@ -1,7 +1,7 @@
 // SPDX-License-Identifier: Apache-2.0
 import QtQuick.Controls 2
 import QtQuick 2.14
-import QtGraphicalEffects 1.12
+
 import QtQml 2.14
 
 import xStudio 1.0

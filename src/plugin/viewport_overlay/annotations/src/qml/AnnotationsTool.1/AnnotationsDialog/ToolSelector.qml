@@ -6,8 +6,7 @@ import QtQuick.Window 2.15
 import QtQml 2.15
 import xstudio.qml.bookmarks 1.0
 import QtQml.Models 2.14
-import QtQuick.Dialogs 1.3 //for ColorDialog
-import QtGraphicalEffects 1.15 //for RadialGradient
+import QtQuick.Dialogs 6.5 //for ColorDialog
 
 import xStudio 1.1
 import xstudio.qml.module 1.0
@@ -113,13 +112,13 @@ Item{
                             height: width
                             source: toolImages[index]
                             anchors.horizontalCenter: parent.horizontalCenter
-                            layer {
+                            /*layer {
                                 enabled: true
-                                effect:
-                                ColorOverlay {
-                                    color: enabled? (toolSelector.currentIndex===index || toolBtn.down || toolBtn.hovered)? toolActiveTextColor: toolInactiveTextColor : Qt.darker(toolInactiveTextColor,1.5)
-                                }
-                            }
+                                //effect:
+                                //ColorOverlay {
+                                //    color: enabled? (toolSelector.currentIndex===index || toolBtn.down || toolBtn.hovered)? toolActiveTextColor: toolInactiveTextColor : Qt.darker(toolInactiveTextColor,1.5)
+                                //}
+                            }*/
                         }
 
                         onClicked: {

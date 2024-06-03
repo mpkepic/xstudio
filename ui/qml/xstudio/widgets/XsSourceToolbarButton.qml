@@ -1,7 +1,6 @@
 // SPDX-License-Identifier: Apache-2.0
 import QtQuick 2.12
 import QtQuick.Controls 2.12
-import QtGraphicalEffects 1.12
 import QtQuick.Layouts 1.15
 
 import xStudio 1.0
@@ -181,14 +180,14 @@ XsToolbarItem  {
                                 height: iconsize
                                 anchors.centerIn: parent
                             }
-                            ColorOverlay{
+                            /*ColorOverlay{
                                 id: colorolay
                                 anchors.fill: checkIcon
                                 source: checkIcon
                                 visible: checkBoxItem.checked
                                 color: checkBoxItem.highlighted?XsStyle.hoverColor:XsStyle.hoverColor
                                 antialiasing: true
-                            }
+                            }*/
                         }
         
                         MouseArea {
@@ -300,14 +299,14 @@ XsToolbarItem  {
                                 height: iconsize
                                 anchors.centerIn: parent
                             }
-                            ColorOverlay{
+                            /*ColorOverlay{
                                 id: colorolay
                                 anchors.fill: checkIcon
                                 source: checkIcon
                                 visible: checkBoxItem.checked
                                 color: checkBoxItem.highlighted?XsStyle.hoverColor:XsStyle.hoverColor
                                 antialiasing: true
-                            }
+                            }*
                         }
 
                         MouseArea {

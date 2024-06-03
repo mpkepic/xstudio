@@ -3,13 +3,12 @@
 
 import Qt.labs.platform 1.1
 import Qt.labs.settings 1.0
-import QtGraphicalEffects 1.12
 import QtQml 2.15
 import QtQml.Models 2.15
 import QtQuick 2.15
 import QtQuick.Controls 2.15
-import QtQuick.Controls.Styles 1.4
-import QtQuick.Dialogs 1.3
+
+import QtQuick.Dialogs 6.5
 import QtQuick.Layouts 1.3
 import QtQuick.Shapes 1.12
 import QtQuick.Window 2.15
@@ -886,11 +885,10 @@ ApplicationWindow {
         FileDialog {
             id: media_dialog
             title: "Select media files"
-            folder: app_window.sessionFunction.defaultMediaFolder() || shortcuts.home
+            currentFolder: app_window.sessionFunction.defaultMediaFolder() || shortcuts.home
 
             nameFilters:  [ "Media files ("+helpers.validMediaExtensions()+")", "All files (*)" ]
-            selectExisting: true
-            selectMultiple: true
+            fileMode: FileDialog.OpenFiles
 
             property var index: null
 
@@ -925,11 +923,10 @@ ApplicationWindow {
         FileDialog {
             id: relink_media_dialog
             title: "Relink media files"
-            folder: app_window.sessionFunction.defaultMediaFolder() || shortcuts.home
+            currentFolder: app_window.sessionFunction.defaultMediaFolder() || shortcuts.home
 
-            selectFolder: true
-            selectExisting: true
-            selectMultiple: false
+            //selectFolder: true
+            fileMode: FileDialog.OpenFile
 
             onAccepted: {
                 app_window.sessionModel.relinkMedia(mediaSelectionModel.selectedIndexes, relink_media_dialog.fileUrls[0])
@@ -940,11 +937,11 @@ ApplicationWindow {
         FileDialog {
             id: import_sequence_dialog
             title: "Select sequence files"
-            folder: app_window.sessionFunction.defaultMediaFolder() || shortcuts.home
+            currentFolder: app_window.sessionFunction.defaultMediaFolder() || shortcuts.home
 
             nameFilters:  [ "All files (*)" ]
-            selectExisting: true
-            selectMultiple: true
+
+            fileMode: FileDialog.OpenFiles
 
             property var index: null
 

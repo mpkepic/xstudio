@@ -3,7 +3,7 @@ set(CMAKE_AUTOUIC ON)
 set(CMAKE_AUTOMOC ON)
 set(CMAKE_AUTORCC ON)
 
-find_package(Qt5 COMPONENTS Qml Core Quick Gui Widgets OpenGL REQUIRED)
+find_package(Qt6 COMPONENTS Qml Core Quick Gui Widgets OpenGLWidgets REQUIRED)
 configure_file(.clang-tidy .clang-tidy)
 
 # find_package(Qt5 COMPONENTS Core Gui Widgets OpenGL QUIET)
@@ -16,8 +16,8 @@ endif
 
 project(data_source_shotgun_ui VERSION 0.1.0 LANGUAGES CXX)
 
-QT5_WRAP_CPP(DATA_SOURCE_SHOTGUN_UI_MOC_SRC "${CMAKE_CURRENT_SOURCE_DIR}/data_source_shotgun_ui.hpp")
-QT5_WRAP_CPP(SHOTGUN_MODEL_UI_MOC_SRC "${CMAKE_CURRENT_SOURCE_DIR}/shotgun_model_ui.hpp")
+QT_WRAP_CPP(DATA_SOURCE_SHOTGUN_UI_MOC_SRC "${CMAKE_CURRENT_SOURCE_DIR}/data_source_shotgun_ui.hpp")
+QT_WRAP_CPP(SHOTGUN_MODEL_UI_MOC_SRC "${CMAKE_CURRENT_SOURCE_DIR}/shotgun_model_ui.hpp")
 
 set(SOURCES
 	shotgun_model_ui.cpp
@@ -37,8 +37,8 @@ target_link_libraries(${PROJECT_NAME}
 		xstudio::ui::qml::helper
 		xstudio::shotgun_client
 		${CAF_LIBRARY_core}
-		Qt5::Core
-		Qt5::Qml
+		Qt6::Core
+		Qt6::Qml
 )
 
 set_target_properties(${PROJECT_NAME}

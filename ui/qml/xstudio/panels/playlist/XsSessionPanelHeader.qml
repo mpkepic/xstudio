@@ -2,7 +2,7 @@
 import QtQuick 2.12
 import QtQuick.Layouts 1.3
 import QtQuick.Controls 2.5
-import QtGraphicalEffects 1.12
+
 
 import xstudio.qml.uuid 1.0
 import xstudio.qml.clipboard 1.0
@@ -88,12 +88,12 @@ Rectangle {
                     sourceSize.height: height
                     sourceSize.width:  width
                     smooth: true
-                    layer {
+                    /*layer {
                         enabled: true
                         effect: ColorOverlay {
                             color: XsStyle.controlColor
                         }
-                    }
+                    }*/
                 }
 
                 MouseArea {

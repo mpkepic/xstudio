@@ -5,10 +5,10 @@ import QtQuick.Controls 2.12
 import QtQuick.Controls.Private 1.0
 import QtQuick.Controls.impl 2.12
 import QtQuick.Window 2.12
-import QtGraphicalEffects 1.12
+
 import QtQuick.Layouts 1.3
-import QtGraphicalEffects 1.0
-import QtQuick.Controls.Styles 1.2
+
+
 
 import xStudio 1.0
 

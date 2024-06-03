@@ -6,9 +6,8 @@ import QtQuick.Window 2.15
 import QtQml 2.15
 import xstudio.qml.bookmarks 1.0
 import QtQml.Models 2.14
-import QtQuick.Dialogs 1.3 //for ColorDialog
-import QtGraphicalEffects 1.15 //for RadialGradient
-import QtQuick.Controls.Styles 1.4 //for TextFieldStyle
+import QtQuick.Dialogs 6.5 //for ColorDialog
+
 import QuickFuture 1.0
 import QuickPromise 1.0
 
@@ -145,13 +144,13 @@ ListView{
                             width: parent.width - frameWidth*2
                             // rotation: 90
                             smooth: true
-                            layer {
+                            /*layer {
                                 enabled: true
                                 effect:
                                 ColorOverlay {
                                     color: dragArea.pressed? itemColorActive: dragArea.containsMouse? textColorNormal : Qt.darker(textColorNormal, 2)
                                 }
-                            }
+                            }*/
                         }
 
                         MouseArea{ id: dragArea

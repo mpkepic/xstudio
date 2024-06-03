@@ -2,7 +2,7 @@
 import QtQuick 2.12
 import QtQuick.Window 2.12
 import QtQuick.Controls 2.12
-import QtQuick.Dialogs 1.0
+import QtQuick.Dialogs 6.5
 
 import xstudio.qml.clipboard 1.0
 import xStudio 1.0

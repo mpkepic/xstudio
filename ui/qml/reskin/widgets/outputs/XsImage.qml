@@ -1,7 +1,6 @@
 // SPDX-License-Identifier: Apache-2.0
 import QtQuick 2.12
 import QtQuick.Controls 2.14
-import QtGraphicalEffects 1.15
 
 import xStudioReskin 1.0
 
@@ -27,8 +26,8 @@ Image {
     smooth: true
     antialiasing: true
 
-    layer {
+    /*layer {
         enabled: true
         effect: ColorOverlay { color: imgOverlayColor }
-    }
+    }*/
 }

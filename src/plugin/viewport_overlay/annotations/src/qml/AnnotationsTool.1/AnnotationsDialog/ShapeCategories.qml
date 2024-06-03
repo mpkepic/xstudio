@@ -7,8 +7,7 @@ import QtQuick.Window 2.15
 import QtQml 2.15
 import xstudio.qml.bookmarks 1.0
 import QtQml.Models 2.14
-import QtQuick.Dialogs 1.3 //for ColorDialog
-import QtGraphicalEffects 1.15 //for RadialGradient
+import QtQuick.Dialogs 6.5 //for ColorDialog
 
 import xStudio 1.1
 import xstudio.qml.module 1.0
@@ -73,13 +72,13 @@ Item{
                 width: height
                 height: parent.height-(shapesList.spacing*2)
                 source: shapeImage
-                layer {
+                /*layer {
                     enabled: true
-                    effect:
+                    /*effect:
                     ColorOverlay {
                         color: (shapesList.currentIndex===index || shapeBtn.hovered)? toolActiveTextColor: toolInactiveTextColor
-                    }
-                }
+                    }*/
+                }*/
             }
             onClicked: {
                 shapesList.currentIndex = index

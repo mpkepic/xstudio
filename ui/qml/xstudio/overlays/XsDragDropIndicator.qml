@@ -43,7 +43,7 @@ Item {
                     effect: ColorOverlay {
                         color: XsStyle.controlTitleColor
                     }
-                }
+                }*/
                 visible: imageVisible === 1*/
             }
 

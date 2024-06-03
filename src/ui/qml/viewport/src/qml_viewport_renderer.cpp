@@ -68,7 +68,11 @@ void QMLViewportRenderer::paint() {
         emit(zoomChanged(viewport_renderer_->pixel_zoom()));
     }
 
-    m_window->resetOpenGLState();
+    //m_window->resetOpenGLState();
+    m_window->beginExternalCommands();
+    //TODO: Need to reset opengl state here.
+    m_window->endExternalCommands();
+
     if (viewport_renderer_->playing()) {
         emit(doRedraw());
     }

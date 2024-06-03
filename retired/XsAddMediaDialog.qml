@@ -1,5 +1,5 @@
 // SPDX-License-Identifier: Apache-2.0
-import QtQuick.Dialogs 1.0
+import QtQuick.Dialogs 6.5
 import QuickFuture 1.0
 import QuickPromise 1.0
 
@@ -8,11 +8,10 @@ import xStudio 1.0
 FileDialog {
     id: media_dialog
     title: "Select media files"
-    folder: session.pathNative ? XsUtils.stem(session.path.toString()).replace("localhost","") : shortcuts.home
+    currentFolder: session.pathNative ? XsUtils.stem(session.path.toString()).replace("localhost","") : shortcuts.home
 
     nameFilters:  [ "Media files ("+helpers.validMediaExtensions()+")", "All files (*)" ]
-    selectExisting: true
-    selectMultiple: true
+    fileMode: FileDialog.OpenFiles
 
     function newItem(parent, obj, value) {
         if(obj.selected && obj.loadMedia) {

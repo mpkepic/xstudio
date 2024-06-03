@@ -7,8 +7,7 @@ import QtQuick.Window 2.15
 import QtQml 2.15
 import xstudio.qml.bookmarks 1.0
 import QtQml.Models 2.14
-import QtQuick.Dialogs 1.3 //for ColorDialog
-import QtGraphicalEffects 1.15 //for RadialGradient
+import QtQuick.Dialogs 6.5 //for ColorDialog
 
 import xStudio 1.1
 import xstudio.qml.module 1.0
@@ -132,12 +131,12 @@ Item {
                 sourceSize.width: 15
                 sourceSize.height: 15
 
-                layer {
+                /*layer {
                     enabled: true
-                    effect: ColorOverlay {
-                        color: reloadButton.down || reloadButton.hovered ? "white" : XsStyle.controlTitleColor
-                    }
-                }
+                    //effect: ColorOverlay {
+                    //    color: reloadButton.down || reloadButton.hovered ? "white" : XsStyle.controlTitleColor
+                    //}
+                }*/
             }
         }
 

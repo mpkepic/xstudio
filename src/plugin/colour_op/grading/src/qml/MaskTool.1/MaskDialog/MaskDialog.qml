@@ -7,8 +7,7 @@ import QtQuick.Window 2.15
 import QtQml 2.15
 import xstudio.qml.bookmarks 1.0
 import QtQml.Models 2.14
-import QtQuick.Dialogs 1.3 //for ColorDialog
-import QtGraphicalEffects 1.15 //for RadialGradient
+import QtQuick.Dialogs 6.5 //for ColorDialog
 
 import xStudio 1.1
 import xstudio.qml.module 1.0
@@ -824,13 +823,13 @@ Item {
                                         visible: parent.containsDrag
                                         anchors.fill: parent
                                         source: "qrc:///feather_icons/plus-circle.svg"
-                                        layer {
+                                        /*layer {
                                             enabled: (preset=="black" || preset=="#000000")
-                                            effect:
+                                            //effect:
                                             ColorOverlay {
                                                 color: "white"
                                             }
-                                        }
+                                        }*/
                                     }
                                     onDropped: {
                                         currentColorPresetModel.setProperty(index, "preset", currentToolColour.toString())

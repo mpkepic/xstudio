@@ -2,7 +2,7 @@
 import QtQuick 2.12
 import QtQuick.Controls 2.14
 import QtQuick.Layouts 1.3
-import QtQuick.Dialogs 1.3
+import QtQuick.Dialogs 6.5
 
 import xStudio 1.1
 
@@ -37,11 +37,10 @@ XsDialog {
     FileDialog {
         id: select_path_dialog
         title: "Select Snapshot Path"
-        folder: path_control.text || app_window.sessionFunction.defaultSessionFolder() || shortcuts.home
+        currentFolder: path_control.text || app_window.sessionFunction.defaultSessionFolder() || shortcuts.home
 
-        selectFolder: true
-        selectExisting: true
-        selectMultiple: false
+        //selectFolder: true
+        fileMode: FileDialog.OpenFile
 
         onAccepted: {
             path_control.text = select_path_dialog.fileUrls[0]

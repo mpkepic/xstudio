@@ -16,6 +16,8 @@ project(${XSTUDIO_GLOBAL_NAME} VERSION ${XSTUDIO_GLOBAL_VERSION} LANGUAGES CXX)
 
 cmake_policy(VERSION 3.26)
 
+add_compile_definitions(QT_DISABLE_DEPRECATED_UP_TO=0x050F00)
+
 option(BUILD_TESTING "Build tests" OFF)
 option(INSTALL_PYTHON_MODULE "Install python module" ON)
 option(INSTALL_XSTUDIO "Install xstudio" ON)
@@ -173,7 +175,8 @@ if(WIN32)
   set(CMAKE_WINDOWS_EXPORT_ALL_SYMBOLS ON)
 
   # When moving to Qt6 or greater, we might be able to use qt_generate_deploy_app_script
-  #set(deploy_script "${Qt5_DIR}/../../../windeployqt.exe  )
+  #set(deploy_script "${Qt6_DIR}/../../../windeployqt.exe"  )
+  #qt_generate_deploy_app_script(TARGET ${PROJECT_NAME})
 endif()
 
 if(MSVC)
@@ -274,7 +277,7 @@ endif ()
 
 add_subdirectory("extern/reproc")
 
-if(USE_VCPKG)
+if(WIN32)
   # To provide reliable ordering, we need to make this install script happen in a subdirectory.
   # Otherwise, Qt deploy will happen before we have the rest of the application deployed.
   add_subdirectory("scripts/qt_install")

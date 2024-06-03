@@ -10,6 +10,7 @@ using namespace xstudio::ui::qml;
 
 #include <QCoreApplication>
 #include <QDebug>
+#include <QFile>
 #include <QProcess>
 #include <QJSValue>
 #include <QMimeData>

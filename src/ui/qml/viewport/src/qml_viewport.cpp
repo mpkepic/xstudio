@@ -181,7 +181,8 @@ void QMLViewport::handleWindowChanged(QQuickWindow *win) {
 
         // This is crucial - we draw the viewport before QML renders to the screen.
         // If we don't turn off clear then the viewport gets wiped
-        win->setClearBeforeRendering(false);
+        //TODO: Validate if this is still required in Qt6
+        //win->setClearBeforeRendering(false);
         m_window = win;
     }
 }

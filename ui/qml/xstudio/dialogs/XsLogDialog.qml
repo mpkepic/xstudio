@@ -1,9 +1,9 @@
 // SPDX-License-Identifier: Apache-2.0
 import QtQuick 2.12
 import QtQuick.Controls 2.14
-import QtGraphicalEffects 1.12
+
 import QtQuick.Layouts 1.3
-import QtQuick.Dialogs 1.0
+import QtQuick.Dialogs 6.5
 
 import xStudio 1.1
 
@@ -270,11 +270,10 @@ XsWindow {
                     id: saveFileDialog
                     title: "Save logs"
 
-                    folder: app_window.sessionFunction.defaultSessionFolder() || shortcuts.home
+                    currentFolder: app_window.sessionFunction.defaultSessionFolder() || shortcuts.home
 
-                    selectExisting: false
-                    selectMultiple: false
-
+                    fileMode:FileDialog.SaveFile
+                    
                     defaultSuffix: ".log"
                     nameFilters: ["logs (*.log)"]
 

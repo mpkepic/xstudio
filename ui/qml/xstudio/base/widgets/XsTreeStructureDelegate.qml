@@ -6,9 +6,9 @@ import QtQuick.Window 2.15
 import QtQml 2.15
 import xstudio.qml.bookmarks 1.0
 import QtQml.Models 2.14
-import QtQuick.Dialogs 1.3 //for ColorDialog
-import QtGraphicalEffects 1.15 //for RadialGradient
-import QtQuick.Controls.Styles 1.4 //for TextFieldStyle
+import QtQuick.Dialogs 6.5 //for ColorDialog
+
+
 import QuickFuture 1.0
 import QuickPromise 1.0
 
@@ -140,13 +140,13 @@ MouseArea {
                 source: isParent?"qrc:/feather_icons/archive.svg":"qrc:/feather_icons/box.svg"
                 sourceSize.width: height/1.3
                 sourceSize.height: height/1.3
-                layer {
+                /*layer {
                     enabled: true
                     effect:
                     ColorOverlay {
                         color: isMouseHovered? textColorNormal : isSelected? itemColorActive : "#404040"
                     }
-                }
+                }*/
             }
         
             XsText{

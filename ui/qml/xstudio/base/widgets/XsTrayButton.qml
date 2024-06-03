@@ -3,14 +3,14 @@ import QtQuick 2.12
 import QtQuick.Controls 2.12
 import QtQuick.Controls.impl 2.12
 import QtQuick.Window 2.12
-import QtGraphicalEffects 1.12
+
 import QtQuick.Layouts 1.3
 
 import xStudio 1.0
 
 import QtQml 2.14
 import QtQuick 2.12
-import QtGraphicalEffects 1.12
+
 import QtQuick.Layouts 1.12
 
 Rectangle {
@@ -48,12 +48,12 @@ Rectangle {
 		height: XsStyle.toolsButtonIconSize
         property var color: prototype ? XsStyle.indevColor : "white"
 
-		layer {
+		/*layer {
 			enabled: true
 			effect: ColorOverlay {
 				color: mouseHovered ? "white" : prototype ? XsStyle.indevColor : XsStyle.controlTitleColor
 			}
-		}
+		}*/
 	}
 
 	Rectangle {

@@ -1,7 +1,7 @@
 
 SET(LINK_DEPS
 	${CAF_LIBRARY_core}
-	Qt5::Core
+	Qt6::Core
 	xstudio::module
 	xstudio::ui::qml::helper
 )

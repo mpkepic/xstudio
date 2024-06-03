@@ -1,5 +1,5 @@
 // SPDX-License-Identifier: Apache-2.0
-import QtQuick.Dialogs 1.3
+import QtQuick.Dialogs 6.5
 
 import xStudio 1.0
 
@@ -7,15 +7,14 @@ import xStudio 1.0
 
 FileDialog {
     title: "Save session"
-    folder: app_window.sessionFunction.defaultSessionFolder() || shortcuts.home
+    currentFolder: app_window.sessionFunction.defaultSessionFolder() || shortcuts.home
     defaultSuffix: preferences.session_compression.value ? "xsz" : "xst"
 
     signal saved
     signal cancelled
 
     nameFilters:  ["xStudio (*.xst *.xsz)"]
-    selectExisting: false
-    selectMultiple: false
+    fileMode: FileDialog.SaveFile
 
     onAccepted: {
         // check for extension.

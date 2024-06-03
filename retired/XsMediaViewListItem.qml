@@ -1,7 +1,6 @@
 // SPDX-License-Identifier: Apache-2.0
 import QtQuick 2.12
 import QtQuick.Layouts 1.3
-import QtGraphicalEffects 1.0
 import xstudio.qml.module 1.0
 import QuickFuture 1.0
 import QuickPromise 1.0
@@ -213,12 +212,12 @@ Rectangle {
         cache: true
         smooth: true
         transformOrigin: Item.Center
-        layer {
+        /*layer {
             enabled: !online
-            effect: ColorOverlay {
-                color: XsStyle.controlTitleColor
-            }
-        }
+            //effect: ColorOverlay {
+            //    color: XsStyle.controlTitleColor
+            //}
+        }*/
         visible: imageVisible === 1
 
         onSource_urlChanged: {
@@ -247,12 +246,12 @@ Rectangle {
         cache: true
         smooth: true
         transformOrigin: Item.Center
-        layer {
+        /*layer {
             enabled: !online
-            effect: ColorOverlay {
-                color: XsStyle.controlTitleColor
-            }
-        }
+            //effect: ColorOverlay {
+            //    color: XsStyle.controlTitleColor
+            //}
+        }*/
         visible: imageVisible === 2
 
         onSource_urlChanged: {

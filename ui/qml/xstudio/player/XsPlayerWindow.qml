@@ -3,9 +3,8 @@ import QtQuick 2.12
 import QtQuick.Window 2.12
 import QtQuick.Layouts 1.3
 import QtQuick.Controls 2.5
-import QtQuick.Controls.Styles 1.4
-import QtQuick.Dialogs 1.2
-import QtGraphicalEffects 1.12
+
+import QtQuick.Dialogs 6.5
 import QtQuick.Shapes 1.12
 import Qt.labs.platform 1.1
 import Qt.labs.settings 1.0

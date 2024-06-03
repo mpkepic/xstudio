@@ -12,7 +12,7 @@ set(CMAKE_CXX_STANDARD_REQUIRED ON)
 
 set(INSTALL_ROOT ${CMAKE_INSTALL_PREFIX})
 
-find_package(Qt5 COMPONENTS Core Quick REQUIRED)
+find_package(Qt6 COMPONENTS Core Quick REQUIRED)
 
 if(NOT DEFINED STATIC)
   set(STATIC OFF)
@@ -29,7 +29,7 @@ set(QML_FILES
 set(CMAKE_PREFIX_PATH ${CMAKE_PREFIX_PATH} ${PROJECT_SOURCE_DIR}/qml)
 
 # Approximates RESOURCES
-qt5_add_resources(RESOURCES ${PROJECT_SOURCE_DIR}/qml/quickpromise.qrc)
+qt_add_resources(RESOURCES ${PROJECT_SOURCE_DIR}/qml/quickpromise.qrc)
 
 # Add the library
 if(${STATIC})
@@ -38,7 +38,7 @@ else()
     add_library(quickpromise SHARED)
 endif()
 
-target_link_libraries(quickpromise PRIVATE Qt5::Core Qt5::Quick)
+target_link_libraries(quickpromise PRIVATE Qt6::Core Qt6::Quick)
 
 # Add resource and header files to the library
 target_sources(quickpromise PRIVATE ${QML_FILES} ${RESOURCES})

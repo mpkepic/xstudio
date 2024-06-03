@@ -6,8 +6,8 @@ import QtQuick.Layouts 1.15
 import QtQuick.Window 2.15
 import QtQml 2.15
 import QtQml.Models 2.14
-import QtQuick.Dialogs 1.3 //for ColorDialog
-import QtGraphicalEffects 1.15 //for RadialGradient
+import QtQuick.Dialogs 6.5 //for ColorDialog
+
 
 import xStudio 1.0
 import xstudio.qml.bookmarks 1.0
@@ -235,13 +235,13 @@ XsWindow {
                         height: width
                         source: toolImage
                         anchors.horizontalCenter: parent.horizontalCenter
-                        layer {
+                        /*layer {
                             enabled: true
                             effect:
                             ColorOverlay {
                                 color: (toolSelector.currentIndex===index || isMouseHovered)? toolActiveTextColor: toolInactiveTextColor
                             }
-                        }
+                        }*/
                     }
                     MouseArea{
                         id: toolSelectorMArea
@@ -485,13 +485,13 @@ XsWindow {
                                 width: height
                                 height: parent.height-(shapesList.spacing*2)
                                 source: shapeImage
-                                layer {
+                                /*layer {
                                     enabled: true
                                     effect:
                                     ColorOverlay {
                                         color: (shapesList.currentIndex===index || isMouseHovered)? toolActiveTextColor: toolInactiveTextColor
                                     }
-                                }
+                                }*/
                             }
                             MouseArea{
                                 id: shapeListMArea
@@ -878,13 +878,13 @@ XsWindow {
                             }
                             source: src
                             opacity: currentToolOpacity
-                            layer {
+                            /*layer {
                                 enabled: true
                                 effect:
                                 ColorOverlay {
                                     color: currentToolColor
                                 }
-                            }
+                            }*/
                         }
 
                         MouseArea{ id: testPreviewWithKeys //#test-block
@@ -977,13 +977,13 @@ XsWindow {
                                     visible: parent.containsDrag
                                     anchors.fill: parent
                                     source: "qrc:///feather_icons/plus-circle.svg"
-                                    layer {
+                                    /*layer {
                                         enabled: (preset=="black" || preset=="#000000")
                                         effect:
                                         ColorOverlay {
                                             color: "white"
                                         }
-                                    }
+                                    }*/
                                 }
                                 onDropped: {
                                     currentColorPresetModel.setProperty(index, "preset", currentToolColor.toString())
@@ -1425,13 +1425,13 @@ XsWindow {
                 source: "qrc:///feather_icons/play.svg"
                 rotation: (isAdvancedOptionsClicked)? 90: 0
                 Behavior on rotation {NumberAnimation{ duration: 150 }}
-                layer {
+                /*layer {
                     enabled: true
                     effect:
                     ColorOverlay {
                         color: parent.isMouseHovered? textValueColor: toolInactiveTextColor
                     }
-                }
+                }*/
             }
             Text{
                 text: "Advanced Options"

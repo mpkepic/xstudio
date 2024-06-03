@@ -1,7 +1,7 @@
 // SPDX-License-Identifier: Apache-2.0
 import QtQuick 2.12
 import QtQuick.Controls 2.14
-import QtGraphicalEffects 1.15 //for ColorOverlay
+
 
 import xStudio 1.1
 
@@ -56,13 +56,13 @@ Button {
             anchors.centerIn: parent
             smooth: true
             antialiasing: true
-            layer {
+            /*layer {
                 enabled: true
                 effect:
                 ColorOverlay {
                     color: widget.down || widget.hovered? ((subtleActive && isActive) ? textColorNormal : textColorPressed) : (subtleActive && isActive) ? bgColorPressed : textColorNormal
                 }
-            }
+            }*/
         }
         Text {
             id: textDiv

@@ -1,7 +1,6 @@
 // SPDX-License-Identifier: Apache-2.0
 import QtQuick 2.12
 import QtQuick.Controls 2.5
-import QtGraphicalEffects 1.12
 
 import xStudioReskin 1.0
 
@@ -53,13 +52,13 @@ MenuItem {
         visible: widget.subMenu || widget.hasSubMenu
         anchors.verticalCenter: parent.verticalCenter
         
-        ColorOverlay{
+        /*ColorOverlay{
             id: myIconOverlay
             anchors.fill: myIcon
             source: myIcon
             color: textPart.color
             antialiasing: true
-        }
+        }*/
 
     }
 
@@ -102,10 +101,10 @@ MenuItem {
                 height: iconsize // 2
                 anchors.centerIn: parent
                 
-                layer {
+                /*layer {
                     enabled: true
                     effect: ColorOverlay { color: widget.checked? widget.highlighted?"#F1F1F1":bgColorPressed:"#C1C1C1" }
-                }
+                }*/
             }
 
         }
@@ -138,13 +137,13 @@ MenuItem {
             width: iconsize
             height: iconsize
 
-            ColorOverlay{
+            /*ColorOverlay{
                 anchors.fill: iconPart
                 source:iconPart
                 visible: iconPart.visible
                 color: bgColorPressed
                 antialiasing: true
-            }
+            }*/
         }
 
         property alias textPart:textPart

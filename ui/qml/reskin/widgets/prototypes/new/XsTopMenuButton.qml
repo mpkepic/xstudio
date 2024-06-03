@@ -1,7 +1,6 @@
 // SPDX-License-Identifier: Apache-2.0
 import QtQuick 2.12
 import QtQuick.Controls 2.12
-import QtGraphicalEffects 1.15 //for ColorOverlay
 
 import xStudioReskin 1.0
 

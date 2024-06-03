@@ -6,9 +6,8 @@ import QtQuick.Window 2.15
 import QtQml 2.15
 import xstudio.qml.bookmarks 1.0
 import QtQml.Models 2.14
-import QtQuick.Dialogs 1.3 //for ColorDialog
-import QtGraphicalEffects 1.15 //for RadialGradient
-import QtQuick.Controls.Styles 1.4 //for TextFieldStyle
+import QtQuick.Dialogs 6.5 //for ColorDialog
+
 import Qt.labs.qmlmodels 1.0
 
 import xStudio 1.1
@@ -496,13 +495,13 @@ DelegateChoice {
                     anchors.bottomMargin: 2
                     smooth: true
                     opacity: 0.7
-                    layer {
+                    /*layer {
                         enabled: true
                         effect:
                         ColorOverlay {
                             color: toolTip.visible? palette.highlight : bodyTextDisplay.color
                         }
-                    }
+                    }*/
                 }
             }
 

@@ -1,7 +1,7 @@
 SET(LINK_DEPS
 	${CAF_LIBRARY_core}
-	Qt5::Core
-	Qt5::Test
+	Qt6::Core
+	Qt6::Test
 	xstudio::ui::qml::helper
 	xstudio::ui::qml::tag
 	xstudio::timeline

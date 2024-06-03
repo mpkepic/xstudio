@@ -10,6 +10,7 @@
 
 #include <QDebug>
 #include <QTimer>
+#include <QRegularExpression>
 
 using namespace caf;
 using namespace xstudio;
@@ -75,7 +76,7 @@ void ModuleAttrsDirect::add_attributes_from_backend(
                 qstr_name = qstr_name.replace(" ", "_");
 
                 // force the attr name to be lower case alphanumeric and underscore only
-                qstr_name = qstr_name.replace(QRegExp("[^_a-z0-9]"), "");
+                qstr_name = qstr_name.replace(QRegularExpression("[^_a-z0-9]"), "");
                 QVariant valueqv;
                 try {
                     valueqv = json_to_qvariant(attr->role_data_as_json(role_id));

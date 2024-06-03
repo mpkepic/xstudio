@@ -6,8 +6,6 @@ import QtQml 2.14
 import xstudio.qml.viewport 1.0
 import QuickFuture 1.0
 import QuickPromise 1.0
-import QtGraphicalEffects 1.12
-import QtGraphicalEffects 1.12
 
 import xStudio 1.0
 

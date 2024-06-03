@@ -13,7 +13,7 @@ endif()
 
 find_package(OpenGL REQUIRED)
 find_package(GLEW REQUIRED)
-find_package(Qt5 COMPONENTS Core Quick Gui Widgets OpenGL REQUIRED)
+find_package(Qt6 COMPONENTS Core Quick Gui Widgets OpenGLWidgets REQUIRED)
 find_package(OpenSSL)
 find_package(ZLIB)
 #find_package(OpenTime REQUIRED)
@@ -60,11 +60,11 @@ target_link_libraries(${PROJECT_NAME}
 	PUBLIC
 		caf::core
 		$<$<BOOL:${NVIDIA_HACK}>:GLdispatch>
-		Qt5::Gui
-		Qt5::Core
-		Qt5::Qml
-		Qt5::Quick
-		Qt5::Widgets
+		Qt6::Gui
+		Qt6::Core
+		Qt6::Qml
+		Qt6::Quick
+		Qt6::Widgets
 		OpenSSL::SSL
 		ZLIB::ZLIB
 		#OTIO::opentime

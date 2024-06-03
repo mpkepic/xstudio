@@ -1,5 +1,5 @@
 // SPDX-License-Identifier: Apache-2.0
-import QtQuick.Dialogs 1.3
+import QtQuick.Dialogs 6.5
 import QtQuick 2.14
 
 import xStudio 1.0
@@ -8,15 +8,14 @@ import xStudio 1.0
 
 FileDialog {
     title: "Export CSV"
-    folder: app_window.sessionFunction.defaultSessionFolder() || shortcuts.home
+    currentFolder: app_window.sessionFunction.defaultSessionFolder() || shortcuts.home
     defaultSuffix: "csv"
 
     signal saved(variant path)
     signal cancelled
 
     nameFilters:  ["CSV (*.csv)"]
-    selectExisting: false
-    selectMultiple: false
+    fileMode: FileDialog.SaveFile
 
     onAccepted: {
         // check for extension.

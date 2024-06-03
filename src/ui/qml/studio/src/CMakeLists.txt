@@ -1,6 +1,7 @@
 SET(LINK_DEPS
 	${CAF_LIBRARY_core}
-	Qt5::Core
+	Qt6::Core
+	Qt6::OpenGLWidgets
 	xstudio::ui::qml::helper
 	xstudio::utility
 	xstudio::session

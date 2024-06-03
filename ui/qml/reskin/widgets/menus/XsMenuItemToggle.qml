@@ -3,7 +3,6 @@ import QtQuick 2.15
 import QtQuick.Controls 2.15
 import QtQml.Models 2.14
 import Qt.labs.qmlmodels 1.0
-import QtGraphicalEffects 1.12
 
 import xStudioReskin 1.0
 import xstudio.qml.models 1.0
@@ -104,11 +103,11 @@ Item {
         anchors.left: parent.left
         anchors.leftMargin: checkBoxPadding
         anchors.verticalCenter: parent.verticalCenter
-        layer {
+        /*layer {
             enabled: true
             // effect: ColorOverlay { color: isChecked? labelColor : hotKeyColor }
             effect: ColorOverlay { color: hotKeyColor }
-        }
+        }*/
     }
 
 

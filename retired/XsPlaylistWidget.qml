@@ -2,10 +2,9 @@
 import QtQuick.Controls 1.4
 import QtQuick 2.12
 import QtQuick.Layouts 1.3
-import QtGraphicalEffects 1.12
 import QtQml.Models 2.12
 import Qt.labs.qmlmodels 1.0
-import QtQuick.Dialogs 1.0
+import QtQuick.Dialogs 6.5
 import QuickFuture 1.0
 import QuickPromise 1.0
 

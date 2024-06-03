@@ -2,7 +2,7 @@
 import QtQuick.Controls 2
 import QtQuick 2.14
 import QtQuick.Layouts 1.3
-import QtGraphicalEffects 1.12
+
 import QtQml 2.14
 
 import xStudio 1.0
@@ -49,14 +49,14 @@ Rectangle {
                 anchors.centerIn: parent
             }
 
-            ColorOverlay{
+            /*ColorOverlay{
                 id: colorolay
                 anchors.fill: checkIcon
                 source:checkIcon
                 visible: menu_item.checked
                 color: XsStyle.hoverColor//menuItem.highlighted?XsStyle.hoverColor:XsStyle.menuBackground
                 antialiasing: true
-            }
+            }*/
         }
 
         Text {

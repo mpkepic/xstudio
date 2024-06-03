@@ -3,7 +3,6 @@ import QtQuick 2.15
 import QtQuick.Controls 2.15
 import QtQml.Models 2.14
 import Qt.labs.qmlmodels 1.0
-import QtGraphicalEffects 1.15
 
 import xStudioReskin 1.0
 import xstudio.qml.models 1.0
@@ -111,10 +110,10 @@ Item {
         anchors.left: parent.left
         anchors.leftMargin: labelPadding
         anchors.verticalCenter: parent.verticalCenter
-        layer {
+        /*layer {
             enabled: true
-            effect: ColorOverlay { color: hotKeyColor }
-        }
+            //effect: ColorOverlay { color: hotKeyColor }
+        }*/
 
         rotation: (name=="Split Panel Vertical")? 90:0
         Component.onCompleted: { //#TODO: move to backend model
@@ -195,10 +194,10 @@ Item {
         anchors.rightMargin: labelPadding
         smooth: true
         antialiasing: true
-        layer {
+        /*layer {
             enabled: true
-            effect: ColorOverlay { color: hotKeyColor }
-        }
+            //effect: ColorOverlay { color: hotKeyColor }
+        }*/
     }
 
     Component.onCompleted: {

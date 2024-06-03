@@ -1,12 +1,12 @@
 // SPDX-License-Identifier: Apache-2.0
 import Qt.labs.qmlmodels 1.0
-import QtGraphicalEffects 1.15 //for RadialGradient
+
 import QtQml 2.15
 import QtQml.Models 2.14
 import QtQuick 2.4
 import QtQuick.Controls 1.4
-import QtQuick.Controls.Styles 1.4 //for TextFieldStyle
-import QtQuick.Dialogs 1.3 //for ColorDialog
+
+import QtQuick.Dialogs 6.5 //for ColorDialog
 import QtQuick.Layouts 1.15
 import QtQuick.Window 2.15
 

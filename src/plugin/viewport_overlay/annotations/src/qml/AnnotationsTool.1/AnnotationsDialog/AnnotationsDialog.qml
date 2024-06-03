@@ -7,8 +7,7 @@ import QtQuick.Window 2.15
 import QtQml 2.15
 import xstudio.qml.bookmarks 1.0
 import QtQml.Models 2.14
-import QtQuick.Dialogs 1.3 //for ColorDialog
-import QtGraphicalEffects 1.15 //for RadialGradient
+import QtQuick.Dialogs 6.5 //for ColorDialog
 
 import xStudio 1.1
 import xstudio.qml.module 1.0
@@ -735,13 +734,13 @@ XsWindow {
                                 }
                                 source: src
                                 opacity: currentToolOpacity/100
-                                layer {
+                                /*layer {
                                     enabled: true
                                     effect:
                                     ColorOverlay {
                                         color: currentToolColour
                                     }
-                                }
+                                }*/
                             }
 
                             MouseArea{ id: testPreviewWithKeys //#test-block
@@ -827,13 +826,13 @@ XsWindow {
                                         visible: parent.containsDrag
                                         anchors.fill: parent
                                         source: "qrc:///feather_icons/plus-circle.svg"
-                                        layer {
+                                        /*layer {
                                             enabled: (preset=="black" || preset=="#000000")
                                             effect:
-                                            ColorOverlay {
+                                            /*ColorOverlay {
                                                 color: "white"
-                                            }
-                                        }
+                                            }*/
+                                        }*/
                                     }
                                     onDropped: {
                                         currentColorPresetModel.setProperty(index, "preset", currentToolColour.toString())
@@ -1159,13 +1158,13 @@ XsWindow {
                     source: "qrc:///feather_icons/play.svg"
                     rotation: (isAdvancedOptionsClicked)? 90: 0
                     Behavior on rotation {NumberAnimation{ duration: 150 }}
-                    layer {
+                    /*layer {
                         enabled: true
                         effect:
                         ColorOverlay {
                             color: parent.isMouseHovered? textValueColor: toolInactiveTextColor
                         }
-                    }
+                    }*/
                 }
                 onClicked: {
                     isAdvancedOptionsClicked = !isAdvancedOptionsClicked

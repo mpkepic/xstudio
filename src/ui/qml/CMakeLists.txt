@@ -5,7 +5,7 @@ set(CMAKE_AUTOUIC ON)
 set(CMAKE_AUTOMOC ON)
 set(CMAKE_AUTORCC ON)
 
-find_package(Qt5 COMPONENTS Core Quick Gui Widgets OpenGL Test Concurrent REQUIRED)
+find_package(Qt6 COMPONENTS Core Quick Gui Widgets OpenGLWidgets Test Concurrent REQUIRED)
 configure_file(.clang-tidy .clang-tidy)
 
 if(CMAKE_CXX_COMPILER_ID MATCHES "Clang" OR CMAKE_CXX_COMPILER_ID STREQUAL "GNU")

@@ -577,7 +577,7 @@ DelegateChoice {
 			        }
 			    }
 
-			    DropShadow {
+			    /*DropShadow {
 			        anchors.fill: playing_indicator
 			        horizontalOffset: 3
 			        verticalOffset: 3
@@ -599,7 +599,7 @@ DelegateChoice {
 			        source: bookmark_indicator
 			        visible: bookmark_indicator.visible
 			        z:3
-			    }
+			    }*/
 
 			    Rectangle {
 			        color: "transparent"

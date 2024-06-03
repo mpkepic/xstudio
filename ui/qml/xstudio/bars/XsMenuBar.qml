@@ -13,11 +13,11 @@ MenuBar  {
     implicitHeight: XsStyle.menuBarHeight*opacity
     visible: opacity != 0.0
     background: Rectangle {color: XsStyle.mainBackground}
-    property var playerWidget: undefined
-    property var playhead: viewport.playhead
+    property var playerWidget: myMenuBar.playerWidget
+    property var playhead: myMenuBar.playhead
 
-    property alias playerWidget: myMenuBar.playerWidget
-    property alias playhead: myMenuBar.playhead
+    //property alias playerWidget: myMenuBar.playerWidget
+    //property alias playhead: myMenuBar.playhead
 
     property alias panelMenu: panel_menu
     property alias mediaMenu: media_menu

@@ -6,7 +6,7 @@ import xStudio 1.0
 
 Item {
     property alias source: myIcon.source
-    property alias iconColor: myIconOverlay.color
+    //property alias iconColor: myIconOverlay.color
     property alias sourceSize: myIcon.sourceSize
     property alias myIcon:myIcon
 

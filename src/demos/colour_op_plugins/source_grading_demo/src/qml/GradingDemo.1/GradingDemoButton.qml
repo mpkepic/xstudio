@@ -34,15 +34,15 @@ XsTrayButton {
         verticalAlignment: Qt.AlignVCenter    
     }
 
-    DropShadow {
+    /*DropShadow {
         anchors.fill: txt
         source: txt
         verticalOffset: 2
         color: "black"
         radius: 1
         samples: 3
-    }
-
+    }*/
+    
     property var gradingDemoDialog
 
     property bool dialogVisible: gradingDemoDialog ? gradingDemoDialog.visible : false

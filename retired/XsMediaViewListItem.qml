@@ -350,7 +350,7 @@ Rectangle {
     //     visible: session.bookmarks.ownedBookmarks.hasOwnProperty(uuid.toString().substr(1,36))
     // }
 
-    DropShadow {
+    /*DropShadow {
         anchors.fill: playing_indicator
         horizontalOffset: 3
         verticalOffset: 3
@@ -371,6 +371,7 @@ Rectangle {
         source: bookmark_indicator
         visible: bookmark_indicator.visible
     }
+    */
 
     Rectangle {
 

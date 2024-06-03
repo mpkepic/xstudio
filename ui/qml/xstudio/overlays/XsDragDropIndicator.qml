@@ -44,7 +44,7 @@ Item {
                         color: XsStyle.controlTitleColor
                     }
                 }*/
-                visible: imageVisible === 1*/
+                visible: imageVisible === 1
             }
 
             Rectangle {

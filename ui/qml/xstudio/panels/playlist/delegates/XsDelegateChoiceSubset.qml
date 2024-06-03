@@ -4,7 +4,7 @@ import Qt.labs.qmlmodels 1.0
 import QtQml 2.15
 import QtQml.Models 2.14
 import QtQuick 2.4
-import QtQuick.Controls 1.4
+import QtQuick.Controls 2.5
 
 import QtQuick.Dialogs 6.5 //for ColorDialog
 import QtQuick.Layouts 1.15

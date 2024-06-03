@@ -3,7 +3,7 @@ import QtQuick 2.15
 import QtQuick.Window 2.15
 import QtQuick.Layouts 1.3
 import QtQuick.Controls 2.15
-// import QtQuick.Controls 1.4
+// import QtQuick.Controls 2.5
 
 import QtQuick.Dialogs 6.5
 import QtQuick.Shapes 1.12

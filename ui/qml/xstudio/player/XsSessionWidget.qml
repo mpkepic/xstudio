@@ -5,7 +5,7 @@ import QtQuick 2.12
 import QtQuick.Window 2.12
 import QtQuick.Layouts 1.3
 import QtQuick.Controls 2.5
-import QtQuick.Controls 1.4
+import QtQuick.Controls 2.5
 
 import QtQuick.Dialogs 6.5
 import QtQuick.Shapes 1.12
@@ -42,7 +42,7 @@ Rectangle {
     property alias playerWidget: playerWidget
     property alias media_list: media_list
     property alias playlist_panel: playlist_panel
-    property alias is_main_window: sessionWidget.is_main_window
+    //property alias is_main_window: sessionWidget.is_main_window
     property alias viewport: playerWidget.viewport
 
     property var status_bar_visible: playerWidget.status_bar_visible

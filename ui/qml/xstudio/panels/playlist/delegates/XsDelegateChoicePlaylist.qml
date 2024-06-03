@@ -1,7 +1,7 @@
 // SPDX-License-Identifier: Apache-2.0
 import QtQuick 2.15
 import QtQuick.Controls 2.15
-import QtQuick.Controls 1.4
+import QtQuick.Controls 2.5
 import QtQuick.Layouts 1.15
 import QtQuick.Window 2.15
 import QtQml 2.15
@@ -234,7 +234,7 @@ DelegateChoice {
 	                Layout.fillHeight: true
 	                id: the_view
 	                property alias layout: layout
-	                horizontalScrollBarPolicy: Qt.ScrollBarAlwaysOff
+	                //ScrollBar.horizontal.policy: ScrollBar.AlwaysOff
 
 	                ListView {
 	                    id: layout

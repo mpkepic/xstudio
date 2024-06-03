@@ -15,7 +15,7 @@ MenuItem {
     font.pixelSize: XsStyle.menuFontSize
 
     property string iconbg: ""
-    property alias iconcolor: colorolay.color
+    //property alias iconcolor: colorolay.color
     property int iconsize: XsStyle.menuItemHeight *.66
 
     property string myicon: ""
